@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+         body{
+            margin: 0 auto;
+         }
+             .container{
+                height:  100vh;
+                border: 1px solid black;
+            }
+            .header{
+               
+                height: 20%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }    
+               
+            .box{
+                
+                height: 60%;
+                display: flex;
+
+
+            }
+            .footer{
+                
+                height: 20%;
+                
+            }
+            
+            
+           #box-1{
+            height: 100%;
+            width: 30%;
+            background-color: gray;
+                  border-radius: 15px;
+                  color: white;
+           }
+           #box-2{
+             height: 100%;
+             width: 70%;
+             padding: 5px;
+             display: flex;
+             flex-wrap: wrap;
+             justify-content: space-evenly;
+             
+           }
+           ul{
+               list-style: none;
+           }
+           .li{
+            display: inline;
+            margin: 5px;
+            background-color: gray;
+            border-radius: 13px;
+            padding: 8px;
+            color: white;
+           }
+           #logo{
+                height: 50%;
+                width: 10%;
+           }
+           .button{
+            height: 100%;
+            width: 30%;
+            
+           }
+           button{
+            height: 30%;
+            padding: 10px 20px;
+            background-color: blueviolet;
+            color: white;
+            border-radius: 15px ;
+            border: 1px solid white;
+           }
+           #image{
+                width: 30%;
+                height: 40%;
+                margin: 10px;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px black;
+           }
+           #para{
+                 text-align: justify;
+                 padding: 10px;
+           }
+           ol{
+            list-style: none;
+           }
+           li{
+            display: inline;
+            margin: 10px;
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+           <div class="header"> 
+                    <img src="assets/logo.jpeg" alt="" id="logo">
+                    <ul>
+                        <li class="li">Home</li>
+                        <li class="li">Contact</li>
+                        <li class="li">About Us</li>
+                        <li class="li">Products</li>
+                        <li class="li">Services</li>
+                    </ul> 
+                    <div class="buttton">
+                        <button>Login</button>
+                        <button>Sign up</button>
+                    </div>
+           </div>
+           <div class="box">
+                    <div class="inner-box" id="box-1">
+                        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae reprehenderit est magni incidunt odio. Nobis quibusdam error incidunt voluptates ipsa officiis, quam nulla aperiam culpa, obcaecati officia dolor qui doloribus distinctio placeat animi inventore rerum necessitatibus veritatis! Rerum non libero modi in ipsum? Cum, sint! Ullam, reprehenderit mollitia culpa nisi provident nam in ea odit saepe, nostrum reiciendis repellendus? Quae, culpa amet veniam iste delectus sint dolorem necessitatibus similique veritatis maxime qui reprehenderit placeat pariatur iusto fugit ullam eveniet at? Sed eligendi, ipsam expedita iste cum eveniet dolorem quas amet culpa, vitae laborum nemo maiores quae sequi, commodi perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae doloremque totam illum alias, nesciunt numquam. Harum distinctio, iusto perferendis molestias doloremque a fuga officiis vero praesentium obcaecati itaque porro ipsam ratione nobis nemo, officia odit illo natus maiores, earum exercitationem. Minus rerum sapiente velit laboriosam itaque. Voluptates at animi natus soluta alias dignissimos perspiciatis temporibus labore tempore mollitia placeat, dicta assumenda doloremque vitae quidem maxime iusto unde </p>
+                    </div>
+                    <div class="inner-box" id="box-2">
+                        <img src="assets/pasta.jpeg" alt="" id="image">
+                        <img src="assets/pasta.jpeg" alt="" id="image">
+                        <img src="assets/pasta.jpeg" alt="" id="image">
+                        <img src="assets/pasta.jpeg" alt="" id="image">
+                        <img src="assets/pasta.jpeg" alt="" id="image">
+                        <img src="assets/pasta.jpeg" alt="" id="image">
+                        
+                    </div>
+           </div>
+           <div class="footer">
+                     <ol>
+                        <li>Meta</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+            <li>Help</li>
+            <li>API</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Top accounts</li>
+            <li>Locations</li>
+            <li>Instagram lite</li>
+            <li>Threads</li>
+            <li>Contact uploading and non-users</li>
+            <li>Meta Verified</li>
+                     </ol>
+           </div>
+        
+      </div>
+</body>
+</html>
