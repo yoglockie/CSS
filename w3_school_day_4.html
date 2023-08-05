@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        .navbar{
+            position: fixed;
+            z-index: 1;
+            height: 7vh;
+            width: 100%;
+            box-shadow: 2px 2px 2px gray;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+           
+        }
+        
+        .nav-right{
+            display: flex;
+            margin-right: 50px;
+            
+            
+        }
+         
+        .nav-left{
+            margin-left: 50px;
+            font-size: 18px;
+            letter-spacing: 3px;
+        }
+        .nav-p{
+                 margin: 20px;
+                 font-size: 18px;
+                 padding: 5px 8px;
+                 letter-spacing: 3px;
+        }
+       .nav-p:hover {
+            background-color: #CCCCCC;
+            cursor: pointer;
+        }
+        .nav-left:hover {
+            background-color: #CCCCCC;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        .main-image{
+            height: 98vh;
+            width:  98%;
+            /* border: 1px solid black; */
+            background-image: url(assets/architect.jpg);
+           background-repeat: no-repeat;
+           
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10vh;
+        }
+        #main-h1{
+            color: white;
+            font-size: 45px;
+        }
+        #br{
+            background-color: black;
+            opacity: 0.7;
+            padding: 3px 15px;
+            
+        }
+        .project{
+            height: 75vh;
+            width: 96%;
+            /* border: 1px solid black; */
+        }
+        
+        #project-p{
+            font-size: 25px;
+        }
+        hr{
+            color: gray;
+        }
+
+        .houses{
+            height: 60vh;
+            /* border: 1px solid black; */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .house-images{
+            height: 26vh;
+            width: 22%;
+            /* border: 1px solid black; */
+            /* background: url(assets/house5.jpg); */
+            
+        }
+        #ho-1{
+            background: url(assets/house2.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-2{
+            background: url(assets/house4.jpg);
+            background-size:contain;
+            background-repeat: no-repeat;
+        }
+        #ho-3{
+            background: url(assets/house3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-3{
+            background: url(assets/house5.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-4{
+            background: url(assets/house3.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-5{
+            background: url(assets/house4.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-6{
+            background: url(assets/house5.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-7{
+            background: url(assets/house4\ \(1\).jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        #ho-8{
+            background: url(assets/house5.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .house-text{
+            position: relative;
+            top: 6px;
+            background-color: black;
+            color: white;
+            padding: 5px 10px;
+            
+        }
+        
+
+
+
+        .about{
+            height: 83vh;
+            width: 96%;
+            /* border: 1px solid black; */
+            margin-bottom: 10vh;
+        }
+        #about-para{
+                   line-height: 25px;
+                   word-spacing: 2px;
+        }
+        .person-div{
+            height: 70%;
+            width: 98%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .persons{
+            height: 100%;
+            width: 23%;
+        }
+        .img-persons{
+            height: 53%;
+            width: 100%;
+            -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+             filter: grayscale(60%);
+        }
+
+       .person-name{
+              font-size: 20px;
+       }
+       .contact-button{
+           padding: 10px;
+           width: 100%;
+           border: none;
+       }
+
+        .contact{
+            height: 55vh;
+            width: 96%;
+            /* border: 1px solid black; */
+            margin-bottom: 10vh;
+        }
+        input{
+            height: 5vh;
+            width: 99%;
+            margin-bottom: 15px;
+            border: 1px solid #E5E5E5;
+            
+        }
+        #submit-button{
+            width: 150px;
+            height: 40px;
+            background-color: black;
+            color: white;
+            font-size:15px;
+        }
+        .last-image{
+            height: 100vh;
+            width: 96%;
+            /* border: 1px solid black; */
+            background: url(assets/map.jpg);
+        }
+        .footer{
+            height: 10vh;
+            width: 100%;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+
+<div class="main">
+        <!-- navbar -->
+    
+    <div class="navbar">
+        <div class="nav-left">
+            <span ><b>BR</b></span> Architects    
+        </div>
+        
+        <div class="nav-right">
+            <p class="nav-p">Project</p>
+            <p class="nav-p">About</p>
+            <p class="nav-p">Contact</p>
+        </div>
+
+
+ </div>
+
+
+
+ <!-- first-big- image -->
+
+ <div class="main-image">
+     <h1 id="main-h1">
+         <span id="br"><b>BR</b></span>
+         <span>Architects</span>
+     </h1>
+ </div>
+
+
+
+
+ <!-- project -->
+ <div class="project">
+     <p id="project-p">Project</p>
+     <hr>
+     <div class="houses">
+            <div class="house-images" id="ho-1"><span class="house-text">Summer House</span></div>
+            <div class="house-images" id="ho-2"><span class="house-text">Barn House</span></div>
+            <div class="house-images" id="ho-3"><span class="house-text">Barn House</span></div>
+            <div class="house-images" id="ho-4"><span class="house-text">Barn House</span></div>
+            <div class="house-images" id="ho-5"><span class="house-text">Barn House</span></div>
+            <div class="house-images" id="ho-6"><span class="house-text">Brick House</span></div>
+            <div class="house-images" id="ho-7"><span class="house-text">Barn House</span></div>
+            <div class="house-images" id="ho-8"><span class="house-text">Barn House</span></div>
+     </div>
+ </div>
+
+
+
+
+ <!-- about -->
+ <div class="about">
+    <p id="project-p">About</p>
+    <hr>
+    <p id="about-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quis reiciendis eius facere similique hic optio ipsum eos laborum aperiam, placeat vero esse ratione excepturi dolor qui aliquam, architecto aspernatur asperiores! Debitis tempora doloremque perspiciatis? Quis aliquid iure temporibus accusantium repellat, aperiam explicabo vero incidunt deleniti ducimus exercitationem. Veniam ipsa at possimus, architecto cumque error consequuntur deserunt consequatur optio mollitia, exercitationem itaque ipsam. A quae ipsum odio veniam quisquam consequatur omnis eum reiciendis ullam necessitatibus, accusamus itaque, ut cumque suscipit sapiente? Ratione, in fugiat necessitatibus deserunt eum cumque culpa dignissimos facere nam harum! Odit quod delectus aliquid, temporibus quis quae.</p>
+    <div class="person-div">
+        <div class="persons"><img src="assets/team2.jpg" alt="" class="img-persons"> <p class="person-name">John Doe</p> <p style="color: #B5B5B5;">CEO & Founder</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iusto!</p><button class="contact-button">Contact</button></div>
+        <div class="persons"><img src="assets/team1.jpg" alt="" class="img-persons"> <p class="person-name">Jahn Doe</p> <p style="color: #B5B5B5;">CEO & Founder</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iusto!</p><button class="contact-button">Contact</button></div>
+        <div class="persons"><img src="assets/team3.jpg" alt="" class="img-persons"> <p class="person-name">Mike Ross</p> <p style="color: #B5B5B5;">CEO & Founder</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iusto!</p><button class="contact-button">Contact</button></div>
+        <div class="persons"><img src="assets/team4.jpg" alt="" class="img-persons"> <p class="person-name">Dan Star</p> <p style="color: #B5B5B5;">CEO & Founder</p> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, iusto!</p><button class="contact-button">Contact</button></div>
+    </div>
+ </div>
+
+
+
+
+ <!-- contact -->
+ <div class="contact">
+    <p id="project-p">Contact</p>
+    <hr>
+    <p>Lets get in touch and talk about your next project.</p>
+    <input type="text" placeholder=" Name">
+    <input type="text" placeholder=" Email">
+    <input type="text" placeholder=" Subject">
+    <input type="text" placeholder=" Comment">
+    <button id="submit-button">Send Messege</button>
+ </div>
+
+
+
+ <!-- last-image -->
+ <div class="last-image">
+      
+ </div>
+
+
+
+
+ <div class="footer">
+            <p>Powered by w3.css</p>
+ </div>
+</div>
+</body>
+</html>
