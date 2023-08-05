@@ -190,7 +190,7 @@
         .img-persons{
             height: 53%;
             width: 100%;
-            -webkit-filter: grayscale(60%); /* Safari 6.0 - 9.0 */
+            -webkit-filter: grayscale(60%); 
              filter: grayscale(60%);
         }
 
@@ -214,6 +214,7 @@
             width: 99%;
             margin-bottom: 15px;
             border: 1px solid #E5E5E5;
+            padding-left: 20px;
             
         }
         #submit-button{
@@ -222,6 +223,12 @@
             background-color: black;
             color: white;
             font-size:15px;
+        }
+        #submit-button:hover{
+            cursor: pointer;
+            background-color: #CCCCCC;
+            color: black;
+            border: none;
         }
         .last-image{
             height: 100vh;
@@ -270,8 +277,8 @@
 
  <div class="main-image">
      <h1 id="main-h1">
-         <span id="br"><b>BR</b></span>
-         <span>Architects</span>
+         <span style="letter-spacing: 3px;" id="br"><b>BR</b></span>
+         <span style="letter-spacing: 3px;">Architects</span>
      </h1>
  </div>
 
@@ -319,7 +326,7 @@
     <hr>
     <p>Lets get in touch and talk about your next project.</p>
     <input type="text" placeholder=" Name">
-    <input type="text" placeholder=" Email">
+    <input type="email" placeholder=" Email">
     <input type="text" placeholder=" Subject">
     <input type="text" placeholder=" Comment">
     <button id="submit-button">Send Messege</button>

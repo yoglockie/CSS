@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        .box{
+            
+            display: inline-block;
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            cursor: pointer;
+            transition: all 4s ease-in;
+            background: url(assets/cookie.jpg);
+            background-size:cover;
+            animation: yog;
+            animation-duration: 3s;
+            animation-iteration-count: 4;
+            
+            
+        }
+        .box:hover{
+               height: 300px;
+               width: 300px;
+               background-color: blue;
+               border-radius: 50px;
+               /* transform: rotate(45deg);
+               transform: skewX(45deg);
+               transform: skewY(65deg);
+
+               transform: translate(300px); */
+               animation: yog;
+               
+              
+        } 
+        @keyframes yog{
+         from { transform: translateX(120px) rotateY(0deg); }
+          to { transform: translateX(120px) rotateY(360deg); }
+           }
+           @keyframes yog{
+            from { transform: rotateY(0deg) translateX(120px); }
+            to { transform: rotateY(360deg) translateX(120px); }
+            }
+                    
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box">
+    </div>
+    <div class="box-2">
+    </div>
+         
+</body>
+</html>

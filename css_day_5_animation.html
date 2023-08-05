@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        .parent-1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            
+            
+            height: 200px;
+            width: 200px;
+            animation: lokesh;
+            animation-duration: 5s;
+            animation-iteration-count: 0;
+            text-align: center;
+            font-size: 50px;
+        }
+        .box-2{
+            
+            
+            height: 200px;
+            width: 200px;
+            animation: lokesh;
+            animation-duration: 5s;
+            animation-iteration-count: 0;
+            text-align: center;
+            font-size: 50px;
+        }
+        
+        .block{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            position: relative;
+            animation: yogi;
+            animation-iteration-count: 2;
+            animation-duration: 5s;
+        }
+        
+        @keyframes yogi{
+            20%{
+                left: 200px;
+                top: 0px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            40%{
+                top: 200px;
+                left: 200px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            60%{
+                top: 200px;
+                left: 400px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            80%{
+                top: 400px;
+                left: 400px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            90%{
+                top: 400px;
+                right: 0px;
+                background-color: white;
+                border-radius: 10px;
+            }
+            100%{
+                top: 0px;
+                left: 0px;
+                background-color: white;
+                border-radius: 10px;
+            }
+        }
+
+        @keyframes lokesh{
+               /* from{
+                    height: 200px;
+                    width: 200px;
+                    background-color: aqua;
+                     
+               } */
+               
+               to{
+                height: 500px;
+                width: 500px;
+                background-color: azure;
+                border: 1px solid black;
+                border-radius: 15px;
+                box-shadow: 2px 2px 2px black;
+                margin: 200px;
+                
+               }
+               
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent-1">
+        <div class="box">
+              <p>Lokesh</p>
+        </div>
+        <div class="box-2">
+              <p>Yogi</p>
+        </div>
+    </div>
+
+    <div class="parent-2">
+        <div class="block">
+
+        </div>
+    </div>
+</body>
+</html>
