@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        body{
+
+            margin: 0 auto;
+            background-color: #202124;
+
+        }
+        .parent{
+            width: 100%;
+            
+            margin: 5vh auto;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .top{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            width: 100%;
+            height: 60px;
+        }
+        #self-image,#grid{
+            height: 40px;
+            width: 40px;
+            vertical-align:middle;
+            
+            border-radius: 50px;
+            
+        }
+        #self-image{
+            padding: 5px;
+        }
+        
+        
+        #grid,#self-image:hover{
+             
+             background-color: #2F3034;
+        }
+        #grid:hover{
+            padding: 5px;
+        }
+        .top-elements{
+            margin-right: 20px;
+            color: white;
+            
+        }
+        .top-elements:hover{
+            text-decoration: underline;
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 250px;
+        }
+        #google{
+            height: 170px;
+            width: 250px;
+        }
+
+        .search{
+            width: 100%;
+            max-height: 160px;
+            display: flex;
+            justify-content: center;
+        }
+        .sub-search{
+            width: 40%;
+           
+            
+        }
+        
+        .in-box{
+            
+            height: 50px;
+            border-radius: 30px;
+            border: 1px solid #5E6267;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1px 15px;
+            
+            
+        }
+        /* .in-box:hover{
+            background-color: #303134;
+        } */
+        svg{
+            fill: #9AA0A6;
+
+        }
+        .input{
+            width: 75%;
+           
+            
+        }
+        input{
+            width: 100%;
+            background-color: #202124;
+            border: none;
+            padding: 10px;
+            color: white;
+            font-size: 18px;
+            outline: none;
+        }
+
+
+
+
+
+        .out-box{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            
+            padding-top: 15px;
+
+        }
+
+        .feeling{
+            height: 30px;
+            
+            padding: 5px 10px;
+            margin: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #303134;
+            border-radius: 8px;
+           } 
+           .feeling:hover{
+              border: 1px solid #5E6267;
+          }
+          
+
+          .p-out{
+              color: white;
+              
+          }
+           
+         .languages{
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: start;
+              margin-bottom: 150px;
+         }   
+         ul{
+            list-style: none;
+         }
+         li{
+            display: inline;
+            margin-left: 5px;
+            color: #4184F4;
+            font-size: 13px;
+            
+         }
+
+            
+        .footer{
+               position: absolute;
+               bottom: 0px;
+               height: 10vh;
+               width: 100%;
+              
+        } 
+        .fo{
+            height: 50%;
+            width: 100%;
+            border-bottom: 1px solid #9AA0A6;
+            
+        }
+        .ft{
+            height: 50%;
+            width: 100%;
+           
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+
+        @media (max-width:1059px)
+      {
+        .ticon{
+            display: none;
+        }
+      }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+     <div class="parent">
+           <div class="top">
+                  <p class="top-elements">Gmail</p>
+                  <p class="top-elements">Images</p>
+                  <div class="image-div">
+                    <img src="assets/grid.png" alt="" id="grid" class="top-elements ">
+                  </div>
+                  <div class="image-div">
+                    <img src="assets/person.jpg" alt="" id="self-image" class="top-elements" >
+                  </div>
+           </div>
+
+           <div class="logo">
+                     <img src="assets/google.png" alt="" id="google">
+           </div>
+
+           <div class="search">
+                      <div class="sub-search">
+                             <div class="in-box">
+                                  <div class="sicon">
+                                    <svg style="margin-left: 15px;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                                  </div>
+                                  <div class="input">
+                                          <input type="text">
+                                  </div>
+                                  <div class="ticon">
+                                    <svg style="margin-right: 20px;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M192 0C139 0 96 43 96 96V256c0 53 43 96 96 96s96-43 96-96V96c0-53-43-96-96-96zM64 216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 89.1 66.2 162.7 152 174.4V464H120c-13.3 0-24 10.7-24 24s10.7 24 24 24h72 72c13.3 0 24-10.7 24-24s-10.7-24-24-24H216V430.4c85.8-11.7 152-85.3 152-174.4V216c0-13.3-10.7-24-24-24s-24 10.7-24 24v40c0 70.7-57.3 128-128 128s-128-57.3-128-128V216z"/></svg>
+                                    <svg style="margin-right: 15px;" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"/></svg>
+                                  </div>
+                             </div>
+                             <div class="out-box">
+                                  <div class="feeling">
+                                         <p class="p-out">Google Search</p>
+                                  </div>
+                                  <div class="feeling">
+                                       <p class="p-out">I'm Feeling Lucky</p>
+                                  </div>
+                             </div>
+                      </div>
+           </div>
+           <div class="languages">
+                        
+                        <ul>
+                            <li style="color: white;">Google offered in:</li>
+                            <a href=""><li>हिन्दी</li></a>
+                            <a href=""><li>বাংলা</li></a>
+                            <a href=""><li>తెలుగు</li></a>
+                            <a href=""><li>मराठी</li></a>
+                            <a href=""><li>தமிழ்</li></a>
+                            <a href=""><li>ગુજરાતી</li></a>
+                            <a href=""><li>ಕನ್ನಡ</li></a>
+                            <a href=""><li>മലയാളം</li></a>
+                            <a href=""><li>ਪੰਜਾਬੀ</li></a>
+                        </ul>
+           </div>
+           
+     </div>
+     <div class="footer">
+              <div class="fo">
+                   <p style="margin-left: 50px; font-size: 15px; color: #9AA0A6;">India</p>
+              </div>
+              <div class="ft">
+                  <ul>
+                     <li style="margin-left: 10px; font-size: 15px; color: #9AA0A6;">About</li>
+                     <li style="margin-left: 14px; font-size: 15px; color: #9AA0A6;">Advertising</li>
+                     <li style="margin-left: 14px; font-size: 15px; color: #9AA0A6;">Buisness</li>
+                     <li style="margin-left: 14px; font-size: 15px; color: #9AA0A6;">How Search Work</li>
+                  </ul>
+                 
+                  <ul>
+                    <li style="margin-right: 20px; font-size: 15px; color: #9AA0A6;">Privacy</li>
+                    <li style="margin-right: 20px; font-size: 15px; color: #9AA0A6;">Terms</li>
+                    <li style="margin-right: 20px; font-size: 15px; color: #9AA0A6;">Settings</li>
+                 </ul>
+              </div>
+     </div>
+</body>
+</html>
