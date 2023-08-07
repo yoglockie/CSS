@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container
+        {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 1fr 9fr 1fr;
+        }
+        .box{
+            
+            background-color: skyblue;
+            border: 1px solid blue;
+        }
+        #middle-box{
+              display: grid;
+              grid-template-columns: 6fr 4fr;
+        }
+        .inner-box{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        #left-middle-box{
+            display: grid;
+            grid-template-rows: 2fr 8fr;
+            
+        }
+        .article, .article-heading{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+     <div class="container">
+        <div class="box"></div>
+        <div class="box" id="middle-box">
+            <div class="inner-box" id="left-middle-box">
+                <div class="article-heading">
+                          <p style="font-size: 35px; font-weight: bold;  text-align: justify; letter-spacing: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repudiandae id quam voluptate! Aspernatur, ratione?</p>
+                </div>
+                <div class="article">
+                      <p style="font-size: 26px; text-align: justify; letter-spacing: 1px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, ipsa necessitatibus praesentium repudiandae dolorem quod repellat impedit ab, ut adipisci commodi dolores voluptas, facere culpa voluptatum illum. Ab velit optio neque fugit impedit culpa modi eum corrupti? Distinctio labore eum expedita, optio dolor a sequi incidunt harum ipsam. Aliquid repudiandae at natus modi nam iure quasi dignissimos esse. Dignissimos praesentium provident vero at? Non saepe sed dignissimos eum consectetur corporis, nemo neque magni. Fugit placeat excepturi impedit quam exercitationem officiis dolorem quae necessitatibus quas veritatis dignissimos ullam, quos, dicta quibusdam, tempore laboriosam ea optio non possimus labore qui at. Incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores blanditiis atque inventore, officiis magni quod laborum cumque cum non qui similique quidem rerum nihil aliquam nemo totam, deleniti, asperiores provident iste accusamus tempora iure obcaecati amet autem. Qui asperiores consectetur, quasi sed at et deleniti dolore ut reiciendis quidem. Laboriosam, non earum? Commodi doloribus unde nisi incidunt voluptates asperiores illo eius quis, repellendus suscipit tempora non omnis quo eveniet quibusdam explicabo aperiam id saepe corrupti placeat temporibus. Repellat saepe consectetur quasi maxime sed odio laboriosam autem voluptates reprehenderit aut eligendi illo, ipsum molestias quidem laborum eum aliquam dolorem nam temporibus.</p>
+                </div>
+            </div>
+            <div class="inner-box">
+                <img src="assets/pasta.jpeg" alt="" height="100%" width="100%" style="border-radius: 20px; box-shadow: 2px 2px 3px black;">
+            </div>
+        </div>
+        <div class="box"></div>
+        
+     </div>
+</body>
+</html>
